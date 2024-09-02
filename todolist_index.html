@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Title-->
+        <title>ToDoList</title>
+        <!--Meta tag for character set-->
+        <meta charset="UTF-8">
+        <!--Meta tag for display-->
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="index2.css">
+    </head>
+    <body>
+        <header>
+            <h1>To Do List</h1>
+        </header>
+        <form id="add-task">
+            <input type="text" placeholder="Enter your task here" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <section id="tasks">
+            <h2><i>My Tasks</i></h2>
+            <ul>
+                <li><input type="checkbox"> <span>Task</span> <button
+                        class="delete">Delete</button></li>
+                <li><input type="checkbox"> <span>Task2</span> <button
+                        class="delete">Delete</button></li>
+                <li><input type="checkbox"> <span>Task3</span> <button
+                        class="delete">Delete</button></li>
+                <li><input type="checkbox"> <span>Task4</span> <button
+                        class="delete">Delete</button></li>
+            </ul>
+            <div class="task-info">
+                <p><span>4</span> Tasks total</p>
+            </div>
+            <button class="clear-all">Clear All</button>
+        </section>
+        <script src="todolist_script.js"></script>
+    </body>
+</html>
