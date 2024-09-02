@@ -3,19 +3,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color:black;
+    color: black;
 
 }
 
 header {
     background-color: rgb(74, 5, 5);
     color: white;
-    padding: 20px;
+    padding: 1px;
     text-align: center;
     font-size: 20px;
 }
 
-form {
+#add-task {
     display: flex;
     justify-content: center;
     margin: 25px;
@@ -33,10 +33,20 @@ input[type="text"] {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 4px;
-    background-color: blue;
-    border: none;
     color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -51,16 +61,16 @@ h2 {
 }
 
 .clear-all {
+    display: block;
+    margin-top: 20px;
     text-align: center;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 5px;
-    background-color: #c82333;
+    background-color: #dc3545;
     border: none;
     color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
 }
 
 .clear-all:hover {
@@ -83,13 +93,14 @@ h2 {
     margin: 0;
 }
 
-section {
+#tasks {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 ul {
