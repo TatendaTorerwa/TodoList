@@ -112,6 +112,11 @@ li input[type="checkbox"] {
     margin-right: 10px;
 }
 
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: gray;
+}
+
 li {
     display: flex;
     align-items: center;
